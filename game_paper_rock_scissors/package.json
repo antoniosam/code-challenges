@@ -1,0 +1,20 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "![Design preview for the Rock, Paper, Scissors coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch css/style.scss --output css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "modal-vanilla": "^0.9.0",
+    "node-sass": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniosam/code-challenge__game_paper_rock_scissors.git"
+  }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+            rel="stylesheet"
+        />
+        <title>Frontend Mentor | Interactive pricing component</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="header-container">
+                    <h1>Simple, traffic-based pricing</h1>
+                    <h2>
+                        Sing up for our 30 day trial.<br />No credit card
+                        required.
+                    </h2>
+                </div>
+                <div class="card">
+                    <div class="header-card">
+                        <p class="viewers">100K PAGEVIWEWS</p>
+                        <p class="price" id="price-desktop">
+                            <span class="bill" id="bill-desktop">$16.00</span
+                            ><span class="frequency" id="frequency-desktop">
+                                / month</span
+                            >
+                        </p>
+                    </div>
+                    <div class="container-card">
+                        <div class="container-scroll">
+                            <input
+                                name="range-slider"
+                                type="range"
+                                min="0"
+                                max="100"
+                                step="1"
+                                value="50"
+                                class="slider"
+                                id="price-slider"
+                                title="rango de visitas"
+                            />
+                            <div
+                                class="slider slider-full"
+                                id="price-slider-full"
+                            ></div>
+                        </div>
+                        <div class="price" id="price-mobile">
+                            <span class="bill" id="bill-mobile">$16.00</span>
+                            <span class="frequency" id="bill-frequency">
+                                / month</span
+                            >
+                        </div>
+                        <div class="payment-type">
+                            <span class="text-payment-type"
+                                >Monthly Billing</span
+                            >
+                            <span class="slide-toggle">
+                                <label class="switch"
+                                    ><input
+                                        type="checkbox"
+                                        id="check-discount" /><span
+                                        class="toggle round"
+                                    ></span
+                                ></label>
+                            </span>
+                            <span class="text-payment-type"
+                                >Yearly Billing</span
+                            >
+                            <span class="discount">-25%</span>
+                        </div>
+                    </div>
+                    <div class="footer-card">
+                        <div class="container-footer-card">
+                            <ul class="benefits-list">
+                                <li>Unlimited websites</li>
+                                <li>100% data ownership</li>
+                                <li>Email reports</li>
+                            </ul>
+                            <div class="container-button">
+                                <button class="main-button">
+                                    Start my trial
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Antonio</a>.
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>

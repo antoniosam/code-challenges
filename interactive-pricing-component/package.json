@@ -1,0 +1,23 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "![Design preview for the Interactive pricing component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss --output styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniosam/code-challenge__interactive-pricing-component-main.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoniosam/code-challenge__interactive-pricing-component-main/issues"
+  },
+  "homepage": "https://github.com/antoniosam/code-challenge__interactive-pricing-component-main#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

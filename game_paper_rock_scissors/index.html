@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/boostrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="wraper">
+      <div class="page">
+        <div id="header">
+          <div class="logo"></div>
+          <div class="container_score">
+            <p>Score</p>
+            <div id="score">0</div>
+          </div>
+        </div>
+        <div class="selection">
+          <div class="selection_row">
+            <div class="selection_item paper" id="selection_paper"></div>
+            <div class="selection_item scissors" id="selection_scissors"></div>
+          </div>
+          <div class="selection_row">
+            <div class="selection_item rock" id="selection_rock"></div>
+          </div>
+        </div>
+        <div class="versus">
+          <div class="versus_item">
+            <div class="icon" id="selection_user"></div>
+            <div class="etiqueta">Elegiste</div>
+          </div>
+          <div class="versus_info desk">
+            <div class="legend"></div>
+            <div class="repeat_game">
+              <button class="btnRepeat">Volver a jugar</button>
+            </div>
+          </div>
+          <div class="versus_item">
+            <div class="icon" id="selection_pc"></div>
+            <div class="etiqueta">Eligio</div>
+          </div>
+        </div>
+        <div class="versus_info mobile">
+          <div class="legend"></div>
+          <div class="repeat_game">
+            <button class="btnRepeat">Volver a jugar</button>
+          </div>
+        </div>
+        <div class="rules">
+          <button id="btnRules">Reglas</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="rules-modal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">REGLAS</h4>
+          </div>
+          <div class="modal-body">
+            <img src="images/image-rules.svg" />
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+
+    <!-- /.modal -->
+    <script src="js/modal.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
