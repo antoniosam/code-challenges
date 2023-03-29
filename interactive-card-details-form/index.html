@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <aside>
+      <div class="row">
+        <div class="card front">
+          <p class="number" id="text-number">0000 0000 0000 0000</p>
+          <div class="details">
+            <p class="name" id="text-name">Jane Appleseed</p>
+            <p class="expiration" id="text-expiration">00/00</p>
+          </div>
+        </div>
+      </div>
+      <div class="row rigth">
+        <div class="card back">
+          <p id="text-cvc">000</p>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <form id="form">
+        <div class="form-group">
+          <label>Cardholder Name</label>
+          <input type="text" placeholder="e.g. Jane Appleseed" id="card-name" />
+          <p class="error" id="error-name">El nombre es obligatorio</p>
+        </div>
+        <div class="form-group">
+          <label> Card Number</label>
+          <input
+            type="text"
+            placeholder="e.g. 1234 5678 9123 0000"
+            id="card-number"
+            maxlength="16"
+          />
+          <p class="error" id="error-number">El numero es obligatorio</p>
+        </div>
+        <div class="row">
+          <div class="col-50 content-vertical">
+            <div class="row"><label>Exp. Date (MM/YY)</label></div>
+            <div class="row">
+              <div class="col-50 content-vertical">
+                <input
+                  type="text"
+                  placeholder="MM"
+                  maxlength="2"
+                  class="small"
+                  id="card-month"
+                />
+                <p class="error" id="error-month">Mes incorrecto</p>
+              </div>
+              <div class="col-50 content-vertical">
+                <input
+                  type="text"
+                  placeholder="YY"
+                  maxlength="2"
+                  class="small"
+                  id="card-year"
+                />
+                <p class="error" id="error-year">Año incorrecto</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-50 content-vertical">
+            <label>CVC</label>
+            <input
+              type="text"
+              placeholder="e.g. 123"
+              id="card-cvc"
+              maxlength="3"
+            />
+            <p class="error" id="error-cvc">Cvc incorrecto</p>
+          </div>
+        </div>
+
+        <button type="submit" class="btn">Confirm</button>
+      </form>
+      <div class="success" id="success">
+        <img src="./images/icon-complete.svg" title="Complete" />
+        <p class="title">Thank you!</p>
+        <p class="description">We've added your card details</p>
+        <button class="btn" id="continue">Continue</button>
+      </div>
+    </main>
+    <script src="./style.js"></script>
+  </body>
+</html>

@@ -85,13 +85,13 @@ text-align: right;
         margin-top: 60px;
         font-size:25px;
     }
-        h2 {
-            font-size: 25px;
-        }
-        p{
-            margin-top: 20px;
-            margin-bottom: 30px;
-        }
+    h2 {
+        font-size: 25px;
+    }
+    p{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
     .content {
             display: flex;
             flex-direction: column;
