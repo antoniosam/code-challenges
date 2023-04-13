@@ -1,0 +1,376 @@
+:root{
+    --basic-bg:hsl(222, 26%, 31%);
+    --basic-bg-panel:hsl(223, 31%, 20%);
+    --basic-bg-display:hsl(224, 36%, 15%);
+    --basic-bg-key: hsl(30, 25%, 89%);
+    --basic-bg-key-active: hsl(0, 0%, 100%);
+    --basic-bg-key-shadow: hsl(28, 16%, 65%);
+    --basic-bg-del: hsl(225, 21%, 49%);
+    --basic-bg-del-active: hsl(224, 22%, 60%);
+    --basic-bg-del-shadow: hsl(224, 28%, 35%);
+    --basic-bg-result: hsl(6, 63%, 50%);
+    --basic-bg-result-active: hsl(6, 60%, 57%);
+    --basic-bg-result-shadow: hsl(6, 70%, 34%);
+    --basic-color-main: hsl(0, 0%, 100%);
+    --basic-color-key: hsl(221, 14%, 31%);
+    --basic-color-key-del: hsl(0, 0%, 100%);
+    --basic-color-key-result: hsl(0, 0%, 100%);
+    
+
+    --ligth-bg: hsl(0, 0%, 90%);
+    --ligth-bg-panel: hsl(0, 5%, 81%);
+    --ligth-bg-display: hsl(0, 0%, 93%);
+    --ligth-bg-key: hsl(45, 7%, 89%);
+    --ligth-bg-key-active: hsl(0, 0%, 100%);
+    --ligth-bg-key-shadow: hsl(35, 11%, 61%);
+    --ligth-bg-del: hsl(185, 42%, 37%);
+    --ligth-bg-del-active: hsl(186, 30%, 47%);
+    --ligth-bg-del-shadow: hsl(185, 58%, 25%);
+    --ligth-bg-result: hsl(25, 98%, 40%);
+    --ligth-bg-result-active: hsl(6, 60%, 57%);
+    --ligth-bg-result-shadow: hsl(25, 99%, 27%);
+    --ligth-color-main: hsl(60, 10%, 19%);
+    --ligth-color-key: hsl(60, 10%, 19%);
+    --ligth-color-key-del: hsl(0, 0%, 100%);
+    --ligth-color-key-result: hsl(0, 0%, 100%);
+    
+
+    --contrast-bg: hsl(268, 75%, 9%);
+    --contrast-bg-panel: hsl(268, 71%, 12%);
+    --contrast-bg-display: hsl(268, 71%, 12%);
+    --contrast-bg-key: hsl(268, 47%, 21%);
+    --contrast-bg-key-active: hsl(268, 41%, 27%);
+    --contrast-bg-key-shadow: hsl(290, 70%, 36%);
+    --contrast-bg-del: hsl(281, 89%, 26%);
+    --contrast-bg-del-active: hsl(281, 73%, 31%);
+    --contrast-bg-del-shadow: hsl(285, 91%, 52%);
+    --contrast-bg-result: hsl(176, 100%, 44%);
+    --contrast-bg-result-active: hsl(176, 76%, 50%);
+    --contrast-bg-result-shadow: hsl(177, 92%, 70%);
+    --contrast-color-main: hsl(52, 100%, 62%);
+    --contrast-color-key: hsl(52, 100%, 62%);
+    --contrast-color-key-del:  hsl(0, 0%, 100%);
+    --contrast-color-key-result: hsl(198, 20%, 13%);
+   
+}
+p{
+    margin: 0px;
+}
+html,
+body {
+    min-height: 100% !important;
+    height: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    height: 100%;
+    margin: 0px;
+}
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+h1{
+    font-size: 2rem;
+    margin: 0px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    padding-top: 6px;
+}
+.container-change{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+header .info{
+    display: flex;
+    align-items: flex-end;
+}
+header .info p{
+    padding-right: 20px;
+    padding-bottom: 3px;
+}
+header .labels{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1px;
+    padding: 0px 10px 4px;
+}
+.bg-range{
+    display: inline-flex;
+    border-radius: 20px;
+    height: 20px;
+    padding: 2px 5px;
+}
+input[type='range']{
+    -webkit-appearance: none;
+    background-color: transparent;
+    width: 60px;
+}
+input[type='range']::-webkit-slider-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius:15px;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.row button:last-child{
+    margin-right: 0px;
+}
+button{
+    padding: 10px 0px;
+    font-size: 2rem;
+    font-weight: 700;
+    min-width: 100px;
+    margin-right: 25px;
+    margin-bottom: 26px;
+    border: none;
+    border-radius: 11px;
+    box-shadow: 0px 3px 1px #fff;
+    cursor: pointer;
+    transition: transform 0.4s linear,box-shadow 0.4s;
+}
+button:active {
+    transform: translate(0,3px);
+    box-shadow: 0px 0px 0px #fff !important;
+}
+button.clicked {
+    transform: translate(0, 3px);
+    box-shadow: 0px 0px 0px #fff !important;
+}
+button.del,button.reset{
+    font-size: 1.5rem;
+}
+.double button{
+    min-width: 225px;
+    margin-bottom: 0px;
+}
+#display{
+    height: 70px;
+    font-size: 3rem;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: right;
+}
+.panel{
+    padding: 35px;
+    margin-top: 25px;
+    border-radius: 11px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+/* TEMAS*/
+/* ------------------ Tema BASIC -------------------------------------- */
+body.basic{
+    background-color: var(--basic-bg);
+}
+body.basic header {
+    color: var(--basic-color-main);
+}
+body.basic .bg-range {
+    background-color: var(--basic-bg-panel);
+}
+body.basic input[type='range']::-webkit-slider-thumb {
+    background: var(--basic-bg-result);
+}
+body.basic input[type='range']::-webkit-slider-thumb:hover {
+    background: var(--basic-bg-result-active);
+}
+body.basic #display {
+    background-color:var(--basic-bg-display);
+    color: var(--basic-color-main);
+}
+body.basic .panel {
+    background-color: var(--basic-bg-panel);
+}
+body.basic button {
+    color:var(--basic-color-key);
+    background-color:var(--basic-bg-key);
+    box-shadow: 0px 3px 1px var(--basic-bg-key-shadow);
+}
+body.basic button:hover {
+    background-color: var(--basic-bg-key-active);
+}
+body.basic button.reset,
+body.basic button.del{
+    color:  var(--basic-color-key-del);
+    background-color: var(--basic-bg-del);
+    box-shadow: 0px 3px 1px var(--basic-bg-del-shadow);
+}
+body.basic button.reset:hover,
+body.basic button.del:hover {
+    background-color: var(--basic-bg-del-active);
+}
+body.basic button.result {
+    color:var(--basic-color-key-result);
+    background-color: var(--basic-bg-result);
+    box-shadow: 0px 3px 1px var(--basic-bg-result-shadow);
+}
+body.basic button.result:hover {
+    background-color: var(--basic-bg-result-active);
+}
+/* ----- Tema LIGTH ---------------------------------------- */
+body.ligth {
+    background-color: var(--ligth-bg);
+}
+
+body.ligth header {
+    color: var(--ligth-color-main);
+}
+
+body.ligth .bg-range {
+    background-color: var(--ligth-bg-panel);
+}
+
+body.ligth input[type='range']::-webkit-slider-thumb {
+    background: var(--ligth-bg-result);
+}
+
+body.ligth input[type='range']::-webkit-slider-thumb:hover {
+    background: var(--ligth-bg-result-active);
+}
+
+body.ligth #display {
+    background-color: var(--ligth-bg-display);
+    color: var(--ligth-color-main);
+}
+
+body.ligth .panel {
+    background-color: var(--ligth-bg-panel);
+}
+
+body.ligth button {
+    color: var(--ligth-color-key);
+    background-color: var(--ligth-bg-key);
+    box-shadow: 0px 3px 1px var(--ligth-bg-key-shadow);
+}
+
+body.ligth button:hover {
+    background-color: var(--ligth-bg-key-active);
+}
+
+body.ligth button.reset,
+body.ligth button.del {
+    color: var(--ligth-color-key-del);
+    background-color: var(--ligth-bg-del);
+    box-shadow: 0px 3px 1px var(--ligth-bg-del-shadow);
+}
+
+body.ligth button.reset:hover,
+body.ligth button.del:hover {
+    background-color: var(--ligth-bg-del-active);
+}
+
+body.ligth button.result {
+    color: var(--ligth-color-key-result);
+    background-color: var(--ligth-bg-result);
+    box-shadow: 0px 3px 1px var(--ligth-bg-result-shadow);
+}
+
+body.ligth button.result:hover {
+    background-color: var(--ligth-bg-result-active);
+}
+/* ----- Tema CONSTRAST ---------------------------------------- */
+body.contrast {
+    background-color: var(--contrast-bg);
+}
+
+body.contrast header {
+    color: var(--contrast-color-main);
+}
+
+body.contrast .bg-range {
+    background-color: var(--contrast-bg-panel);
+}
+
+body.contrast input[type='range']::-webkit-slider-thumb {
+    background: var(--contrast-bg-result);
+}
+
+body.contrast input[type='range']::-webkit-slider-thumb:hover {
+    background: var(--contrast-bg-result-active);
+}
+
+body.contrast #display {
+    background-color: var(--contrast-bg-display);
+    color: var(--contrast-color-main);
+}
+
+body.contrast .panel {
+    background-color: var(--contrast-bg-panel);
+}
+
+body.contrast button {
+    color: var(--contrast-color-key);
+    background-color: var(--contrast-bg-key);
+    box-shadow: 0px 3px 1px var(--contrast-bg-key-shadow);
+}
+
+body.contrast button:hover {
+    background-color: var(--contrast-bg-key-active);
+}
+
+body.contrast button.reset,
+body.contrast button.del {
+    color: var(--contrast-color-key-del);
+    background-color: var(--contrast-bg-del);
+    box-shadow: 0px 3px 1px var(--contrast-bg-del-shadow);
+}
+
+body.contrast button.reset:hover,
+body.contrast button.del:hover {
+    background-color: var(--contrast-bg-del-active);
+}
+
+body.contrast button.result {
+    color: var(--contrast-color-key-result);
+    background-color: var(--contrast-bg-result);
+    box-shadow: 0px 3px 1px var(--contrast-bg-result-shadow);
+}
+
+body.contrast button.result:hover {
+    background-color: var(--contrast-bg-result-active);
+}
+
+
+
+@media screen and (max-width: 580px) {
+   body{
+    align-items: flex-start;
+ 
+   }
+   header{
+    margin-top: 25px;
+   }
+   #display{
+    height: 70px;
+    padding: 10px;
+   }
+   .panel {
+       padding: 20px;
+       margin-top: 25px;
+   }
+   button{
+    padding: 13px 0px;
+    border-radius: 5px;
+    min-width: 60px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+   }
+   .double button {
+       min-width: 135px;
+       margin-bottom: 0px;
+   }
+}
