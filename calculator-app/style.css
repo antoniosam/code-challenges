@@ -95,7 +95,7 @@ header .info{
     display: flex;
     align-items: flex-end;
 }
-header .info p{
+header .info label{
     padding-right: 20px;
     padding-bottom: 3px;
 }
