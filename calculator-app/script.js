@@ -102,6 +102,7 @@ function calcPress(value){
             datos.number2 = 0;
             datos.operator =  value;
             datos.lastDigit='0';
+            datos.text= '0';
         }
         if(!datos.number1 && !datos.number2 && datos.result){
             datos.number1 = datos.result;
